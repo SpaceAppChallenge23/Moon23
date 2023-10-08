@@ -6,6 +6,7 @@ import Navbar from './components/navbar/navbar'
 import Welcome from './components/welcome/welcome'
 import Carousel from './components/carousel/carousel';
 import Background from './components/background/background'; 
+import Header from './components/header/header'; 
 
 // function App() {
 //   return (
@@ -25,6 +26,7 @@ const App = () => {
 
     <div>
       <Background/>
+      <Header/>
       <Navbar/>
       <Carousel/>
     </div>

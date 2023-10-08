@@ -24,8 +24,8 @@ const Navbar = () => {
         <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} data-tip data-for="homeTip"><BiHome/></a>
         <ReactTooltip id="homeTip" place="top" effect="solid">Home</ReactTooltip>
 
-        <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''} data-tip data-for="aboutTip"><BiUserCircle/></a>
-        <ReactTooltip id="aboutTip" place="top" effect="solid">About</ReactTooltip>
+        <a href="#questions" onClick={() => setActiveNav('#questions')} className={activeNav === '#questions' ? 'active' : ''} data-tip data-for="aboutTip"><BiUserCircle/></a>
+        <ReactTooltip id="questionsId" place="top" effect="solid">About</ReactTooltip>
 
         <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''} data-tip data-for="experienceTip"><ImStack/></a>
         <ReactTooltip id="experienceTip" place="top" effect="solid">Experience</ReactTooltip>

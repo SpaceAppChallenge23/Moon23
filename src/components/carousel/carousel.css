@@ -1,19 +1,28 @@
-.h3 {
-    color: white;
-}
-
-.p{
-    color: white;
-}
+ /* .h3 {
+    color: green;
+} */
 
 .carousel-item {
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 10rem;
 
 }
-/* carousel.css */
 
 .custom-carousel .carousel-control-prev,
 .custom-carousel .carousel-control-next {
   top: 50%; /* Adjust the value as needed to move the arrows down */
 }
+
+/* Defined styling for carousel captions */
+.carousel-caption {
+    position: absolute;
+    bottom: 1px; /* Adjust this value to move the caption up or down */
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding:5px; 
+
+  }
+  
