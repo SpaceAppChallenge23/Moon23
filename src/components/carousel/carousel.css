@@ -1,1 +1,11 @@
-/* Copy and paste the space background css here from the index.css file*/
+.h3 {
+    color: white;
+}
+
+.p{
+    color: white;
+}
+
+.carousel-item {
+    text-align: center;
+}

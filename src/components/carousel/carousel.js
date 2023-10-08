@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import Test_Moon from '../../assets/test_moon.jpg';
+import './carousel.css'
 
 function CustomCarousel() {
   const [index, setIndex] = useState(0);
