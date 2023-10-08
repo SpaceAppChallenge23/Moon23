@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 import Test_Moon from '../../assets/test_moon.jpg';
-import './carousel.css'
+import './carousel.css';
 
 function CustomCarousel() {
   const [index, setIndex] = useState(0);
@@ -11,7 +11,7 @@ function CustomCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel activeIndex={index} onSelect={handleSelect} className="custom-carousel">
       <Carousel.Item>
         <img src={Test_Moon} alt="First slide" />
         <Carousel.Caption>
