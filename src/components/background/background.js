@@ -3,11 +3,11 @@ import './background.css'
 
 function Background(){
 
-    // uncomment the return
+   
+    return ( 
+        <div class="main"></div>
     
-    // return(
-    //     // Code here
-    // )
+    )
 }
 
 export default Background
