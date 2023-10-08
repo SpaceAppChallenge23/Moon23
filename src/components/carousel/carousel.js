@@ -68,71 +68,113 @@
 // export default Carousel;
 
 
-import React from 'react'
-import './carousel.css'
-import AVTR1 from '../../assets/test_moon.jpg'
+// import React from 'react'
+// import './carousel.css'
+// import AVTR1 from '../../assets/test_moon.jpg'
 
-// // import Swiper core and required modules
-// import { Pagination } from 'swiper';
-// // import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
-// import { Swiper,SwiperSlide } from 'swiper/react';
+// // // import Swiper core and required modules
+// // import { Pagination } from 'swiper';
+// // // import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
+// // import { Swiper,SwiperSlide } from 'swiper/react';
 
-// // Import Swiper styles
+// // // Import Swiper styles
+// // import 'swiper/swiper.min.css'
+// // import './pagination/pagination.min.css';
+
+// import { Pagination } from 'swiper'
+// import { Swiper, SwiperSlide } from 'swiper/react'
+
+
 // import 'swiper/swiper.min.css'
-// import './pagination/pagination.min.css';
+// import 'swiper/css/pagination'
 
-import { Pagination } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
+// const data = [
+//   {
+//     avatar: AVTR1,
+//     name: 'Moon',
+//     review: 'lorem ipsum dolor sit amet'
+//   }
+// ]
 
+// const carousel = () => {
+//   return (
+//     <section id="carousel"> 
+//       <h5>Review from clients</h5>
+//       <h2>Testimonials</h2>
 
-import 'swiper/swiper.min.css'
-import 'swiper/css/pagination'
+//       <Swiper
+//       // install Swiper modules
+//       modules={[ Pagination ]}
+//       spaceBetween={40}
+//       slidesPerView={1}
+//       pagination={{ clickable: true }}
+//     />
 
-const data = [
-  {
-    avatar: AVTR1,
-    name: 'Moon',
-    review: 'lorem ipsum dolor sit amet'
-  }
-]
+//       <Swiper className="container carousel__container"
+//         // install Swiper modules
+//         modules={[ Pagination ]}
+//         spaceBetween={40}
+//         slidesPerView={1}
+//         pagination={{ clickable: true }}      
+//       >
+//         {
+//           data.map(({avatar, name, review}, index) => {
+//             return (
+//               <SwiperSlide key={index} className="testimonial">
+//                 <div className="client__avatar">
+//                     <img src={avatar} alt={avatar}/>
+//                 </div>
+//                 <h5 className="client__name">{name}</h5>
+//                   <small className="client__review">{review}</small>
+//               </SwiperSlide>
+//             )
+//           })
+//         }
+//       </Swiper>
+//     </section>
+//   )
+// }
 
-const carousel = () => {
-  return (
-    <section id="carousel"> 
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+// export default carousel
 
-      <Swiper
-      // install Swiper modules
-      modules={[ Pagination ]}
-      spaceBetween={40}
-      slidesPerView={1}
-      pagination={{ clickable: true }}
-    />
+// import { useState } from 'react';
+// import Carousel from 'react-bootstrap/Carousel';
+// import Test_Moon from '../../assets/test_moon.jpg';
 
-      <Swiper className="container carousel__container"
-        // install Swiper modules
-        modules={[ Pagination ]}
-        spaceBetween={40}
-        slidesPerView={1}
-        pagination={{ clickable: true }}      
-      >
-        {
-          data.map(({avatar, name, review}, index) => {
-            return (
-              <SwiperSlide key={index} className="testimonial">
-                <div className="client__avatar">
-                    <img src={avatar} alt={avatar}/>
-                </div>
-                <h5 className="client__name">{name}</h5>
-                  <small className="client__review">{review}</small>
-              </SwiperSlide>
-            )
-          })
-        }
-      </Swiper>
-    </section>
-  )
-}
+// function Carousel() {
+//   const [index, setIndex] = useState(0);
 
-export default carousel
+//   const handleSelect = (selectedIndex) => {
+//     setIndex(selectedIndex);
+//   };
+
+//   return (
+//     <Carousel activeIndex={index} onSelect={handleSelect}>
+//       <Carousel.Item>
+//         <Test_Moon text="First slide" />
+//         <Carousel.Caption>
+//           <h3>First slide label</h3>
+//           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//       <Carousel.Item>
+//         <Test_Moon text="Second slide" />
+//         <Carousel.Caption>
+//           <h3>Second slide label</h3>
+//           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//       <Carousel.Item>
+//         <Test_Moon text="Third slide" />
+//         <Carousel.Caption>
+//           <h3>Third slide label</h3>
+//           <p>
+//             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+//           </p>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//     </Carousel>
+//   );
+// }
+
+// export default Carousel;
