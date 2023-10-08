@@ -25,7 +25,7 @@ const App = () => {
     <div>
       <Background/>
       <Navbar/>
-      
+      <Carousel/>
     </div>
     
   )
